@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  helper_bot:
+    build: .
+    env_file: .env
+    restart: always
+    volumes:
+      - ./logs:/helper_bot/logs
+      - ./helper_bot.db:/helper_bot/helper_bot.db
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: ["python", "main.py"]

@@ -1,0 +1,6 @@
+python-telegram-bot==21.1.1
+sqlalchemy==2.0.30
+aiosqlite==0.20.0
+python-dotenv==1.0.1
+nest_asyncio==1.6.0
+apscheduler==3.10.4
